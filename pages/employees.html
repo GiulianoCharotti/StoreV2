@@ -89,13 +89,31 @@
     </header>
 
     <main>
-        
+        <div>
+            <h1>Inventario</h1>
+            <h3>Enter new inventory </h3>
+            <form>
+                <label for="type_product">Choose a type of product:</label>
+                <select id="type_product" name="type_product" onchange="type_of_product()">
+                    <option value="-">-</option>
+                    <option value="Consoles">Consoles</option>
+                    <option value="videogames">Videogames</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="phones">Phones</option>
+                    <option value="others">Others</option>
+
+                </select>
+            </form>
+            <input type="submit" value="Submit" onclick="create_inputs()">
+
+
+        </div>
     </main>
 
 
 
     <!--JAVASCRIPT-->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <!--BOOSTRAPT JAVASCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
